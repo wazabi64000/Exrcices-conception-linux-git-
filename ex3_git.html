@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercice 3 — Introduction à Git</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Exercice 3 — Introduction à Git</h1>
+
+    <p>
+      Git est un outil qui te permet de sauvegarder et suivre l’évolution de ton
+      projet. Dans cet exercice, tu vas apprendre à utiliser Git pour créer
+      des « étapes » dans ton projet, comme une machine à remonter le temps.
+    </p>
+
+    <h2>Objectif pédagogique</h2>
+    <ul>
+      <li>Comprendre la notion de version et d’historique d’un projet.</li>
+      <li>Apprendre les commandes Git de base pour créer et consulter des commits.</li>
+      <li>Appliquer Git à ton projet réel pour prendre l’habitude de sauvegarder fréquemment.</li>
+    </ul>
+
+    <h2>Mission</h2>
+    <p>
+      Tu es un voyageur dans le temps. Chaque commit est une étape sauvegardée.
+      Tu pourras revenir en arrière si nécessaire.
+    </p>
+
+    <h2>Instructions pratiques</h2>
+    <ol>
+      <li>
+        Initialise un dépôt Git dans ton dossier projet :
+        <div class="code"><pre>git init</pre></div>
+      </li>
+      <li>
+        Vérifie l’état du dépôt :
+        <div class="code"><pre>git status</pre></div>
+      </li>
+      <li>
+        Ajoute ton cahier des charges (exercice 1) au suivi Git :
+        <div class="code"><pre>git add ex1_conception.html</pre></div>
+      </li>
+      <li>
+        Crée ton premier commit :
+        <div class="code"><pre>git commit -m "Ajout de la conception initiale"</pre></div>
+      </li>
+      <li>
+        Modifie un fichier (par exemple index.html), puis ajoute et commit tes changements :
+        <div class="code"><pre>git add index.html
+git commit -m "Ajout de la structure initiale de la page d'accueil"</pre></div>
+      </li>
+      <li>
+        Consulte l’historique de ton projet :
+        <div class="code"><pre>git log --oneline</pre></div>
+      </li>
+    </ol>
+
+    <h2>Conseils pratiques</h2>
+    <ul>
+      <li>Fais des commits courts et réguliers pour suivre l’évolution de ton travail.</li>
+      <li>Chaque commit représente une étape stable de ton projet.</li>
+      <li>Si tu modifies beaucoup de choses, fais un commit intermédiaire avant de continuer.</li>
+    </ul>
+
+    <h2>Défi bonus</h2>
+    <p>
+      Essaie de revenir à un commit précédent pour voir la version antérieure de ton projet :
+      <div class="code"><pre>git checkout <commit_id></pre></div>
+      <small>(Remplace <commit_id> par l’identifiant d’un commit obtenu avec git log)</small>
+    </p>
+
+    <h2>Navigation</h2>
+    <p>
+      Tu as terminé le parcours de ce TP. Reviens à la page d’accueil pour revoir
+      l’ensemble des exercices ou pratiquer à nouveau :
+      <a href="index.html">Retour à l’accueil</a>
+    </p>
+  </div>
+</body>
+</html>
